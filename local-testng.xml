@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Local Tests" parallel="false">
+    <test name="Local browser tests" preserve-order="true">
+        <parameter name="remote" value="false"/>
+        <packages>
+            <package name=".*"/>
+        </packages>
+    </test>
+</suite>
